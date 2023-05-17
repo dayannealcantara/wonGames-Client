@@ -1,14 +1,10 @@
-// Types provided from the official repo:
-// https://github.com/styled-components/jest-styled-components/blob/master/typings/index.d.ts
-
-/* eslint-disable @typescript-eslint/no-explicit-any */
-/* eslint-disable @typescript-eslint/ban-types */
 import { Plugin, NewPlugin } from 'pretty-format'
 
 declare global {
   namespace jest {
     interface AsymmetricMatcher {
       $$typeof: symbol
+      // eslint-disable-next-line @typescript-eslint/ban-types, @typescript-eslint/no-explicit-any
       sample?: string | RegExp | object | Array<any> | Function
     }
 
