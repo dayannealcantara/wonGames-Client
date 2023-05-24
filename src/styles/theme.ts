@@ -1,10 +1,10 @@
 export default {
   grid: {
-    container: '130 rem',
-    gutter: '3.2 rem'
+    container: '130rem',
+    gutter: '3.2rem'
   },
   border: {
-    radius: '0.4 rem'
+    radius: '0.4rem'
   },
   font: {
     family:
@@ -25,6 +25,7 @@ export default {
     primary: '#F231A5',
     secondary: '#3CD3C1',
     mainBg: '#06092B',
+    lightBg: '#F2F2F2',
     white: '#FAFAFA',
     black: '#030517',
     lightGray: '#EAEAEA',
