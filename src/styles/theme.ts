@@ -18,7 +18,8 @@ export default {
       medium: '1.6rem',
       large: '1.8rem',
       xlarge: '2.0rem',
-      xxlarge: '2.8rem'
+      xxlarge: '2.8rem',
+      huge: '5.2rem'
     }
   },
   colors: {
@@ -53,4 +54,4 @@ export default {
     default: '0.3s ease-in-out',
     fast: '0.1s ease-in-out'
   }
-}
+} as const
