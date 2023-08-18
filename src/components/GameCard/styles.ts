@@ -1,4 +1,4 @@
-import styled, { css, DefaultTheme } from 'styled-components'
+import styled, { css, DefaultTheme } from "styled-components";
 
 export const Wrapper = styled.article`
   ${({ theme }) => css`
@@ -9,9 +9,9 @@ export const Wrapper = styled.article`
     height: 100%;
     background-color: ${theme.colors.white};
   `}
-`
+`;
 
-export const ImageBox = styled.div`
+export const ImageBox = styled.a`
   height: 14rem;
   width: 100%;
   background: #f6f7f8;
@@ -40,7 +40,7 @@ export const ImageBox = styled.div`
       background-position: 40rem 0;
     }
   }
-`
+`;
 
 export const Content = styled.div`
   ${({ theme }) => css`
@@ -51,11 +51,11 @@ export const Content = styled.div`
     height: 100%;
     margin: ${theme.spacings.xsmall};
   `}
-`
+`;
 
-export const Info = styled.div`
+export const Info = styled.a`
   max-width: calc(100% - 2.5rem);
-`
+`;
 
 export const Title = styled.h3`
   ${({ theme }) => css`
@@ -64,7 +64,7 @@ export const Title = styled.h3`
     font-weight: ${theme.font.bold};
     color: ${theme.colors.black};
   `}
-`
+`;
 
 export const Developer = styled.h4`
   ${({ theme }) => css`
@@ -72,7 +72,7 @@ export const Developer = styled.h4`
     font-weight: ${theme.font.bold};
     color: ${theme.colors.gray};
   `}
-`
+`;
 
 export const FavButton = styled.div`
   ${({ theme }) => css`
@@ -86,7 +86,7 @@ export const FavButton = styled.div`
       width: 2.5rem;
     }
   `}
-`
+`;
 
 export const BuyBox = styled.div`
   ${({ theme }) => css`
@@ -95,11 +95,11 @@ export const BuyBox = styled.div`
     justify-content: flex-end;
     margin-top: ${theme.spacings.xxsmall};
   `}
-`
+`;
 
 type PriceProps = {
-  isPromotional?: boolean
-}
+  isPromotional?: boolean;
+};
 
 const priceModifiers = {
   default: (theme: DefaultTheme) => css`
@@ -114,8 +114,8 @@ const priceModifiers = {
     color: ${theme.colors.gray};
     text-decoration: line-through;
     margin-right: ${theme.spacings.xxsmall};
-  `
-}
+  `,
+};
 
 export const Price = styled.div<PriceProps>`
   ${({ theme, isPromotional }) => css`
@@ -127,4 +127,4 @@ export const Price = styled.div<PriceProps>`
     ${!isPromotional && priceModifiers.default(theme)};
     ${isPromotional && priceModifiers.promotional(theme)};
   `}
-`
+`;
